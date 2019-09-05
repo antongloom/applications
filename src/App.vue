@@ -5,7 +5,6 @@
   	</component>
   </div>
 </template>
-
 <style lang="stylus">
 @import 'assets/style/main.styl'
 

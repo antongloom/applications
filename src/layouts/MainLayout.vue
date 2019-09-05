@@ -1,8 +1,7 @@
 <template>
 	<div class="MainLayout">
-		<div class="MainLayout-Content">
-			<Navbar />
-		</div>
+		<Navbar />
+		<router-view />
 	</div>
 </template>
 
@@ -17,13 +16,10 @@ import Navbar from '@/components/app/Navbar'
 export default {
   name: 'main-layout',
   data: () => ({
-  	show: false
+  	
   }),
   components: {
-		Navbar,
-	},
-	methods: {
-
+		Navbar
 	}
 }	
 </script>
