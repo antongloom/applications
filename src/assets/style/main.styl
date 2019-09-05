@@ -1,0 +1,49 @@
+@import 'fonts'
+
+*{
+	padding 0
+	margin 0
+}
+
+body
+	font-family 'Open-Sans'
+	color #222
+
+a
+	text-decoration none
+	color #000
+
+li
+	list-style-type none
+
+
+.Main-Content{
+  width 100%
+  padding 30px 15px 0px 15px
+}
+
+.message
+	position absolute
+	right 10%
+	top 10%
+	background #000
+	color #fff
+	padding 10px
+	border-radius 4px
+	box-shadow 0 0 10px rgba(0,0,0,0.5)
+	animation linear .9s message
+
+
+@keyframes message {
+  0% {
+    top 11%
+    opacity 0.5
+  }
+  100% {
+    top 10%
+    opacity 1
+  }
+}
+
+	
+
