@@ -19,5 +19,17 @@ export default new Router({
       meta: {layout: 'empty'},
       component: () => import('./views/LoginPerformer.vue')
     },
+    {
+      path: '/сustomer',
+      name: 'сustomer',
+      meta: {layout: 'main'},
+      component: () => import('./views/Сustomer.vue')
+    },
+    {
+      path: '/loginCustomer',
+      name: 'loginCustomer',
+      meta: {layout: 'empty'},
+      component: () => import('./views/loginCustomer.vue')
+    }
   ]
 })

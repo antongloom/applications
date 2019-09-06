@@ -101,6 +101,11 @@
 				<div class="Home-Text">Уже есть аккаунт? <router-link to="/loginPerformer"><span>Войти</span></router-link></div>	
   		</form>
   	</div>
+  	<div>
+  		<div>
+  			{{tasks}}
+  		</div>
+  	</div>
   </div>
 </template>
 
@@ -180,13 +185,18 @@ export default {
     description: {required},
     price: {required}
   },
+  computed: {
+  	tasks() {
+  		return this.$store.getters.tasks
+  	}
+  },
   methods: {
     submitHandler() {
       if (this.$v.$invalid) {
         this.$v.$touch()
         return
       }
-      const formData = {
+      const task = {
       	name: this.name,
       	password: this.password,
       	phone: this.phone,
@@ -196,7 +206,7 @@ export default {
       	description: this.description,
       	price: this.price
       }
-      console.log(formData)
+     	this.$store.dispatch('newTask', task)
     }	
   },
 }

@@ -5,8 +5,8 @@
 	  		<div class="Navbar-Time">{{date | date('datetime')}}</div>
 	  	</div>
 	  	<div  class="Navbar-Link">
-	  		<div class="Navbar-Btn">Исполнитель</div>
-	  		<div class="Navbar-Btn">Заказчик</div>
+	  		<div class="Navbar-Btn"><router-link to="/"><span>Исполнитель</span></router-link></div>
+	  		<div class="Navbar-Btn"><router-link to="/сustomer"><span>Заказчик</span></router-link></div>
 	  	</div>
   	</div>
   </div>
@@ -48,6 +48,8 @@
 			color #fff
 			border-radius 2px
 			cursor pointer
+			span
+				color #fff
 
 
 
