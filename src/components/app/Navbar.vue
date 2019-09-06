@@ -1,10 +1,13 @@
 <template>
 	<div class="Navbar">
 		<div class="Navbar-Header">
-	  	<div class="Navbar-Btn">
+	  	<div class="Navbar-Info">
 	  		<div class="Navbar-Time">{{date | date('datetime')}}</div>
 	  	</div>
-	  	<div  class="Navbar-Link"></div>
+	  	<div  class="Navbar-Link">
+	  		<div class="Navbar-Btn">Исполнитель</div>
+	  		<div class="Navbar-Btn">Заказчик</div>
+	  	</div>
   	</div>
   </div>
 </template>
@@ -12,7 +15,7 @@
 <style lang="stylus" scoped>
 	.Navbar
 		&-Header
-			padding 25px 15px
+			padding 15px 15px
 			display flex
 			justify-content space-between
 			align-items center
@@ -30,6 +33,20 @@
 			font-size 20px
 		&-User
 			text-transform uppercase
+			cursor pointer
+		&-Link
+			display flex
+			justify-content space-between
+			align-items center
+			width 300px
+		&-Btn
+			padding 10px
+			background #008b8b
+			box-sizing border-box
+			width 135px
+			text-align center
+			color #fff
+			border-radius 2px
 			cursor pointer
 
 

@@ -12,6 +12,12 @@ export default new Router({
       name: 'home',
       meta: {layout: 'main'},
       component: () => import('./views/Home.vue')
-    }
+    },
+    {
+      path: '/loginPerformer',
+      name: 'loginPerformer',
+      meta: {layout: 'empty'},
+      component: () => import('./views/LoginPerformer.vue')
+    },
   ]
 })

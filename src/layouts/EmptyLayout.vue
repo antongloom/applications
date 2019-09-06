@@ -4,9 +4,6 @@
 	</div>
 </template>
 <style lang="stylus" scoped>
-	.EmptyLayout
-		height 100vh
-		background #ccc
 </style>
 
 <script>
